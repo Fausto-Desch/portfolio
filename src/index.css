@@ -1,0 +1,22 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definimos los estilos base para el modo CLARO */
+/* Esto se aplica por defecto cuando la clase 'dark' NO está presente */
+:root {
+  /* Fondo general para todo el <body> */
+  background-color: #f8fafc; /* Ejemplo: slate-50 (Claro) */
+  /* Color del texto predeterminado */
+  color: #1e293b; /* Ejemplo: slate-800 */
+}
+
+/* Definimos los estilos que se aplican cuando el HTML tiene la clase 'dark' */
+.dark {
+  /* Fondo general para todo el <body> en modo oscuro */
+  background-color: #020617; /* Ejemplo: slate-950 (Oscuro) */
+  /* Color del texto predeterminado */
+  color: #f1f5f9; /* Ejemplo: slate-100 */
+}
