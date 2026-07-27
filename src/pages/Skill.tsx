@@ -52,8 +52,10 @@ const categoryColors = {
   Tools: "border-slate-600/50",
 };
 
+type SkillCategory = keyof typeof categoryColors;
+
 export default function Skills() {
-  const categories = Array.from(new Set(skillsData.map(s => s.category)));
+  const categories = Array.from(new Set(skillsData.map(s => s.category))) as SkillCategory[];
 
   return (
     <section
